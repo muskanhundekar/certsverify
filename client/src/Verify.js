@@ -78,7 +78,7 @@ export default function Verify() {
   return (
     <div
       className="container"
-      style={{ paddingTop: "10%", overflowY: "scroll" }}
+      style={{ paddingTop: "10%", overflowY: "hidden", height: "100vh" }}
     >
       <div className="container main">
         <form>
@@ -100,8 +100,8 @@ export default function Verify() {
           <br />
         </form>
         <div
-          className="btn btn-success"
-          style={{ width: "200px", margin: "0 auto" }}
+          className="btn"
+          style={{ width: "200px", margin: "0 auto", backgroundColor: '#668E45', color: '#FFF' }}
           onClick={() => verify()}
         >
           Verify
@@ -116,7 +116,7 @@ export default function Verify() {
       )}
       {userData.event_name == "Learning Path Program" ?
         <div id="pop-up-err" className="pop-up_3 container">
-          <p className="fs-4">The UID {uid} is valid. <br /> This certificate has been issued to <span className="fs-4 fw-bold">{userData.username}</span>.</p>
+          <p className="fs-4 text-light">The UID <span className="fs-4 fw-bold text-light">{uid}</span> is valid. <br /> This certificate has been issued to <span className="fs-4 fw-bold text-light">{userData.username}</span>.</p>
         </div> :
         <Modal
           isOpen={modalIsOpen}
