@@ -8,9 +8,9 @@ import Certificate from "./GeneralCert2/Certificate";
 import InternCert from "./Intern/InternCert";
 import AwardsCert from "./Awards/AwardsCert";
 
-const url = "http://localhost:8000/certs/";
+// const url = "http://localhost:8000/certs/";
 // const url = "http://146.190.48.141:8000/certs/";
-// const url = "https://certs.thirdeyedata.io:8000/certs/";
+const url = "https://certsverify.thirdeyedata.io:8020/certs/";
 
 const customStyles = {
   content: {
