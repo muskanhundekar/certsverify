@@ -1,0 +1,82 @@
+label {
+    font-weight: 600;
+    /* color: #666; */
+}
+body {
+  background: #f1f1f1;
+}
+.custom-container {
+  /* Your custom styles here */
+  width:1000px;
+  
+}
+/* .box8{
+  box-shadow: 0px 0px 5px 1px #999;
+} */
+
+/* Style the 'row' class */
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Style the 'jumbotron' class */
+.jumbotron {
+  background-color:burlywood; /* Change the background color */
+  padding: 20px; /* Adjust the padding as needed */
+  border: 2px solid #333; /* Change the border style and color */
+}
+
+/* Style the 'box8' class */
+.box8 {
+  box-shadow: 0px 0px 5px 1px #999; /* Add a box shadow with desired properties */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.mx-t3{
+  margin-top: -3rem;
+}
+.text-center{
+    color: green;
+}
+.col-sm-4{
+margin-left: auto;
+}  
+.col-sm-6{
+  box-sizing: border-box;
+}
+.custom-input {
+  width: 100%; /* Adjust the width as needed */
+}
+
+.form-group {
+  margin-right: auto;
+  width: 100%; /* Adjust the width as needed */
+}
+
+/* Rest of your CSS styles here... */
+.input{
+  margin-left: auto;
+}
+#address-2{
+margin-left:10%;
+}
+#address-3{
+  margin-right:5%;
+  }
+#check{
+  justify-content: center;
+}
+
+#btn{
+  margin-left: 85%;
+  margin-top:5%;
+}
+
+#col{
+  width:40%;
+}
+.form-control{
+  width: 20px;
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  color: #054554;
+}
+
+p {
+  font-size: 15px;
+}
+
+.cert-div {
+  width: 880px;
+  height: 600px;
+  background-image: url("../assets/background.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px;
+  text-align: end;
+}
+
+.top-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 20px;
+}
+
+.scan-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code {
+  width: 80px;
+}
+
+.qr-text {
+  color: #d28738;
+}
+
+.text-area {
+  text-align: right;
+}
+
+.cert-text {
+  font-size: 50px;
+  font-weight: 800;
+  margin-block: 0px;
+}
+
+.desc-text {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: capitalize;
+}
+
+.cert-name {
+  font-size: 2.5rem;
+  color: #638f42;
+  margin: 0px;
+}
+
+.event-abt {
+  margin-top: 15px;
+}
+
+.o-abt {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 400px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.o-logo {
+  margin-left: 4rem;
+  margin-bottom: -2rem;
+  width: 80px !important;
+  margin-top: 2rem;
+}
+
+.org-text {
+  margin-top: 5px;
+  font-size: 18px !important;
+}
+
+.text {
+  margin-top: 0.5rem;
+}
+
+.text1 {
+  font-size: 1.5rem;
+}
