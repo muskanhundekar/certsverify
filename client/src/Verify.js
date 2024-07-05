@@ -114,13 +114,9 @@ export default function Verify() {
           </span>
         </div>
       )}
-      {userData.event_name == "safera workshop" ?
+      {userData.event_name == "Learning Path Program" ?
         <div id="pop-up-err" className="pop-up_3 container">
-          <span style={{ fontWeight: "800" }}>
-            Certifate Succesfully Verified
-          </span>
-          <h4>Name : {userData.username}</h4>
-          <h4>Event Name : Data & AI Workshop - Safera Labs </h4>
+          <p className="fs-4">The UID {uid} is valid. <br /> This certificate has been issued to <span className="fs-4 fw-bold">{userData.username}</span>.</p>
         </div> :
         <Modal
           isOpen={modalIsOpen}
