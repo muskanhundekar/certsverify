@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-vi31)h3c+&fs@z$*3w*fqekjgma85rc%_7l$pq!_o7_jc7h_d0
 DEBUG = False
 
 ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "68.183.74.45", "localhost", "104.248.226.27",
-                 "certsadmin.thirdeyedata.io", "certs.thirdeyedata.io", "certsverify.thirdeyedata.io"]
+                 "certsadmin.thirdeyedata.ai", "certs.thirdeyedata.ai", "certsverify.thirdeyedata.ai"]
 
 
 # Application definition
