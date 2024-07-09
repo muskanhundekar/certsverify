@@ -37,24 +37,28 @@ def login(request):
 def verify(request):
     print("verify")
     u_id = request.data['u_id']
-    try:
-        data_obj = participants.objects.get(U_ID=u_id)
-        first_name = data_obj.first_name
-        last_name = data_obj.last_name
-        mobile = data_obj.mobile
-        email = data_obj.email
-        event_name = data_obj.event_name
-        event_date = data_obj.event_date
-        description = data_obj.description
-        certificate_type = data_obj.certificate_type
-        designation = data_obj.designation
-        emp_id = data_obj.emp_id
-        data = {"username": first_name+" "+last_name, "mobile": mobile, "designation": designation, "emp_id": emp_id,
-                'email': email, 'event_date': event_date, 'event_name': event_name, 'certificate_type': certificate_type, "description": description}
-        status = 200
-    except:
-        data = ""
-        status = 400
+    # try:
+    data_obj = participants.objects.get(U_ID=u_id)
+    first_name = data_obj.first_name
+    last_name = data_obj.last_name
+    mobile = data_obj.mobile
+    email = data_obj.email
+    event_name = data_obj.event_name
+    event_date = data_obj.event_date
+    description = data_obj.description
+    certificate_type = data_obj.certificate_type
+    designation = data_obj.designation
+    emp_id = data_obj.emp_id
+    university_name = data_obj.university_name
+    degree = data_obj.degree
+    issue_date = data_obj.issue_date
+    data = {"username": first_name+" "+last_name, "mobile": mobile, "designation": designation, "emp_id": emp_id,
+            'email': email, 'event_date': event_date, 'event_name': event_name, "university_name": university_name,
+            "degree": degree, "issue_date": issue_date, 'certificate_type': certificate_type, "description": description}
+    status = 200
+    # except:
+    #     data = ""
+    #     status = 400
     return Response({"status": status, "data": data})
 
 

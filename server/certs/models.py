@@ -41,6 +41,7 @@ class participants(models.Model):
     event_date = models.CharField(max_length=100,  blank=True, null=True)
     designation = models.CharField(max_length=100,  blank=True, null=True)
     emp_id = models.CharField(max_length=10,  blank=True, null=True)
+    issue_date = models.CharField(max_length=100,  blank=True, null=True)
     U_ID = models.CharField(max_length=100,  blank=True, null=True)
     csv_file_id = models.ForeignKey(
         Csv_Files, null=True, on_delete=models.SET_NULL, default=None)
