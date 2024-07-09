@@ -8,9 +8,9 @@ import Certificate from "./GeneralCert2/Certificate";
 import InternCert from "./Intern/InternCert";
 import AwardsCert from "./Awards/AwardsCert";
 
-// const url = "http://localhost:8000/certs/";
+const url = "http://localhost:8000/certs/";
 // const url = "http://146.190.48.141:8000/certs/";
-const url = "https://certsverify.thirdeyedata.ai:8020/certs/";
+// const url = "https://certsverify.thirdeyedata.ai:8020/certs/";
 
 const customStyles = {
   content: {
@@ -101,7 +101,7 @@ export default function Verify() {
         </form>
         <div
           className="btn"
-          style={{ width: "200px", margin: "0 auto", backgroundColor: '#668E45', color: '#FFF' }}
+          style={{ width: "200px", margin: "0 auto", backgroundColor: '#497921', color: '#FFF' }}
           onClick={() => verify()}
         >
           Verify
@@ -114,9 +114,31 @@ export default function Verify() {
           </span>
         </div>
       )}
-      {userData.event_name == "Learning Path Program" ?
-        <div id="pop-up-err" className="pop-up_3 container">
-          <p className="fs-4 text-light">The UID <span className="fs-4 fw-bold text-light">{uid}</span> is valid. <br /> This certificate has been issued to <span className="fs-4 fw-bold text-light">{userData.username}</span>.</p>
+      {userData.certificate_type == "Learning Path Program" ?
+        <div id="pop-up-err" className="pop-up_3 container pt-3">
+          <ul>
+            <li className="fs-5 text-light">
+              Certificate ID: <span className="fs-5 fw-bold text-light">{uid}</span>
+            </li>
+            <li className="fs-5 text-light">
+              Status: <span className="fs-5 fw-bold text-light">Valid</span>
+            </li>
+            <li className="fs-5 text-light">
+              Issued To: <span className="fs-5 fw-bold text-light">{userData.username}</span>
+            </li>
+            <li className="fs-5 text-light">
+              Issued On: <span className="fs-5 fw-bold text-light">{userData.issue_date}</span>
+            </li>
+            <li className="fs-5 text-light">
+              Completed Course: <span className="fs-5 fw-bold text-light">{userData.event_name}</span>
+            </li>
+            <li className="fs-5 text-light">
+              University/Company: <span className="fs-5 fw-bold text-light">{userData.university_name}</span>
+            </li>
+            <li className="fs-5 text-light">
+              Branch: <span className="fs-5 fw-bold text-light">{userData.degree}</span>
+            </li>
+          </ul>
         </div> :
         <Modal
           isOpen={modalIsOpen}

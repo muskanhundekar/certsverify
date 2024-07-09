@@ -79,11 +79,11 @@
 }
 
 .pop-up_3 {
-    background-color: #668E45;
+    background-color: #497921;
     z-index: 1;
     /* position: fixed; */
     display: block;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     align-items: center;
     margin: auto;
